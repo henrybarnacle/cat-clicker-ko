@@ -43,9 +43,6 @@ var Cat = function(data) {
 
 }, this);
 
-   
-  
-
 }
 
 var ViewModel = function() {
@@ -59,22 +56,18 @@ var ViewModel = function() {
 
 	this.currentCat = ko.observable( this.catList() [0] );
 
+
+	
+
 	this.incrementCounter = function() {
 		this.clickCount(this.clickCount() +1);
 
 		};
 
-		this.catListElem = document.getElementById('cat-list');
-		var cats = self.catList;
-		var cat, elem, i;
-		for ( i = 0; i < cats.length; i++) {
-
-		cat = cats[i];
-
-		elem = document.createElement('li');
-		elem.textContent = cat.name;
+	this.changeCat = function(cat) {
+		self.currentCat(cat);
 	}
-};
+}
 
 
 var viewModel = new ViewModel();
