@@ -2,20 +2,20 @@ var initialCats =  [{
 		name: "Fluffy",
 		imgSrc: 'images/fluffy.png',
 		clickCount: 0,
-		nicknames: ['booboo']
+		nicknames: [{nickname: 'booboo'}]
 
 	},
 	{
 		name: "Ruby",
 		imgSrc: 'images/ruby.png',
 		clickCount: 0,
-		nicknames: ['devil']
+		nicknames: [{nickname: 'devil'}]
 	},
 	{
 		name: "Lucky",
 		imgSrc: 'images/lucky.png',
 		clickCount: 0,
-		nicknames: ['blackie']
+		nicknames: [{nickname:'blackie'}, {nickname:'jim'}]
 
 	}];
 
